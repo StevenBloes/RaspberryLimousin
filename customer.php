@@ -11,7 +11,7 @@
   include 'header.html';
 ?>
     <?php 
-	  $host = 'localhost:3306';
+	  $host = '192.168.129.9:3306';
 	  $user = 'visitor';
 	  $pass = 'visitor';
 	  $database = 'limousin_db';
