@@ -10,7 +10,7 @@
 <?php
   include 'header.html';
 ?>
-    <?php 
+    <!--?php 
 	  try {
 	    $host = '192.168.129.9:3306';
 	    $user = 'visitor';
@@ -22,7 +22,7 @@
 	  } catch (Exception $e) {
         echo 'Caught exception: ',  $e->getMessage(), "\n";
       }
-	?>
+	?-->
   </body>
 </html>
 
