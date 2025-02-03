@@ -9,7 +9,7 @@
   <body>
 <?php
   include "header.html";
-  echo "<table><tr><th>naam</th><tr>"
+  echo "<table><tr><th>naam</th><tr>";
   $host = "192.168.129.9:3306";
   $user = "visitor";
   $pass = "visitor";
@@ -21,7 +21,7 @@
     echo "<tr><td>".$row["name"]."</td></tr>";
   }
   $mysqli_close($mysqli);
-  echo "</table>"
+  echo "</table>";
 ?>
   </body>
 </html>
