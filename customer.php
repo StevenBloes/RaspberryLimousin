@@ -11,13 +11,17 @@
   include 'header.html';
 ?>
     <?php 
-	  $host = '192.168.129.9:3306';
-	  $user = 'visitor';
-	  $pass = 'visitor';
-	  $database = 'limousin_db';
-	  $mysqli_connect = mysqli_connect($host, $user, $pass, $database);
-	  echo <p><i>connection worked</i></p>;
-	  $mysqli_close($mysqli_connect);
+	  try {
+	    $host = '192.168.129.9:3306';
+	    $user = 'visitor';
+	    $pass = 'visitor';
+	    $database = 'limousin_db';
+	    $mysqli = mysqli_connect($host, $user, $pass, $database);
+	    echo <p><i>connection worked</i></p>;
+	    $mysqli_close($mysqli);
+	  } catch (Exception $e) {
+        echo 'Caught exception: ',  $e->getMessage(), "\n";
+      }
 	?>
   </body>
 </html>
