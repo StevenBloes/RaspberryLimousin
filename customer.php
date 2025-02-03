@@ -16,7 +16,7 @@
 	  $pass = 'visitor';
 	  $database = 'limousin_db';
 	  $mysqli_connect = mysqli_connect($host, $user, $pass, $database);
-	  echo <p><i>connection worked</i></p>
+	  echo <p><i>connection worked</i></p>;
 	  $mysqli_close($mysqli_connect);
 	?>
   </body>
