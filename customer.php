@@ -4,14 +4,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Limousin - Klanten</title>
     <link rel="icon" href="/img/favicon.svg">
-    <link rel="stylesheet" href="/stylesheets/header.css"
+    <link rel="stylesheet" href="/stylesheets/header.css">
   </head>
   <body>
 <?php
   include 'header.html';
 ?>
-    <h1>Natalja is een superjuf !!!</h1>
-    <h2>Kusjes Steven &#128536;</h2>
+    <?php 
+	  $host = 'localhost:3306';
+	  $user = 'visitor';
+	  $pass = 'visitor';
+	  $database = 'limousin_db';
+	  $mysqli_connect = mysqli_connect($host, $user, $pass, $limousin_db);
+	  echo <p><i>connection worked</i></p>
+	  $mysqli_close($mysqli_connect);
+	?>
   </body>
 </html>
 
