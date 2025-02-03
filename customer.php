@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Limousin - HOME</title>
+    <title>Limousin - Klanten</title>
     <link rel="icon" href="/img/favicon.svg">
     <link rel="stylesheet" href="/stylesheets/header.css"
   </head>
