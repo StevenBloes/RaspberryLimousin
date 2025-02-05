@@ -18,7 +18,13 @@
   $query = "SELECT name, address, postal, city, phone, mail, remarks FROM customers;";
   $result = mysqli_query($mysqli, $query);
   while ($row = mysqli_fetch_assoc($result)){
-    echo "<tr><td>".$row["name"]."</td><td>".$row["address"]."</td><td>".$row["postal"]."</td><td>".$row["city"]."</td><td>".$row["phone"]."</td><td>".$row["mail"]."</td><td>".$row["remarks"]."</td></tr>";
+    echo "<tr><td>".$row["name"]."</td>
+	<td>".$row["address"]."</td>
+	<td>".$row["postal"]."</td>
+	<td>".$row["city"]."</td>
+	<td>".$row["phone"].'</td>
+	<td><a href="mailto:'.$row["mail"].">".$row["mail"]."</a></td>
+	<td>".$row["remarks"]."</td></tr>";
   }
   $mysqli_close($mysqli);
   echo "</table>";
