@@ -23,7 +23,7 @@
 	<td>".$row["postal"]."</td>
 	<td>".$row["city"]."</td>
 	<td>".$row["phone"].'</td>
-	<td><a href="mailto:'.$row["mail"].">".$row["mail"]."</a></td>
+	<td><a href="mailto:'.$row["mail"].'">'.$row["mail"]."</a></td>
 	<td>".$row["remarks"]."</td></tr>";
   }
   $mysqli_close($mysqli);
