@@ -21,8 +21,8 @@
     echo "<tr><td>".$row["name"]."</td>
 	<td>".$row["address"]."</td>
 	<td>".$row["postal"]."</td>
-	<td>".$row["city"]."</td>
-	<td>".$row["phone"].'</td>
+	<td>".$row["city"].'</td>
+	<td><a href="tel:'.$row["phone"].'">'.$row["phone"]."</a></td>
 	<td><a href="mailto:'.$row["mail"].'">'.$row["mail"]."</a></td>
 	<td>".$row["remarks"]."</td></tr>";
   }
